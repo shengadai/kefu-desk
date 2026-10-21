@@ -1,0 +1,24 @@
+.top-settings-button{width:30px;height:30px;display:grid;place-items:center;border:1px solid #e7edef;border-radius:7px;background:#fff;color:#7d8c94;cursor:pointer}
+.top-settings-button:hover{border-color:#cce8df;background:#f2faf7;color:#32977d}
+.settings-modal{width:min(100%,440px);padding:24px 26px 18px;border:1px solid #e9eff0;border-radius:13px;background:#fff;box-shadow:0 25px 80px #06151f45;animation:modal-in .2s ease-out}
+.startup-setting-row{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:15px 13px;border:1px solid #e5ecec;border-radius:9px;background:#fbfcfc}
+.startup-setting-copy{display:flex;align-items:center;gap:11px;min-width:0}
+.startup-setting-icon{width:34px;height:34px;display:grid;place-items:center;flex:0 0 auto;border-radius:9px;background:#eaf7f2;color:#399a80}
+.startup-setting-copy>span:last-child{display:flex;flex-direction:column;gap:5px}
+.pet-setting-avatar{width:36px;height:36px;flex:0 0 auto;object-fit:contain;border:1px solid #dfe7eb;border-radius:50%;background:#fff}
+.startup-setting-copy strong{color:#344b54;font-size:11px}
+.startup-setting-copy small{color:#87969c;font-size:9px}
+.settings-switch{width:40px;height:23px;display:flex;align-items:center;padding:3px;border:0;border-radius:20px;background:#cbd4d7;cursor:pointer;transition:background .16s ease}
+.settings-switch>span{width:17px;height:17px;border-radius:50%;background:#fff;box-shadow:0 1px 3px #17252a35;transition:transform .16s ease}
+.settings-switch.is-enabled{background:#42b998}
+.settings-switch.is-enabled>span{transform:translateX(17px)}
+.settings-switch:disabled{cursor:not-allowed;opacity:.55}
+.settings-note{margin:10px 2px 0;color:#87969c;font-size:9px;line-height:1.6}
+.settings-modal .form-error{margin-top:12px}
+.theme-dark .top-settings-button,.theme-dark .settings-modal{border-color:#344850;background:#20333d;color:#b5c4c9}
+.theme-dark .startup-setting-row{border-color:#344850;background:#1b2c35}
+.theme-dark .startup-setting-copy strong{color:#d9e4e7}
+.theme-dark .startup-setting-copy small,.theme-dark .settings-note{color:#9aabb1}
+.theme-dark .pet-setting-avatar{border-color:#3a4d55;background:#263943}
+.theme-dark .settings-modal .modal-footer{border-color:#364951}
+@media(max-width:560px){.settings-modal{padding:19px 17px 15px}}

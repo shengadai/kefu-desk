@@ -1,0 +1,95 @@
+@media(max-width:800px){
+  .workspace{min-height:100dvh;display:flex;flex-direction:column}
+  .sidebar{position:sticky;top:0;z-index:10;display:grid;width:100%;height:auto;min-height:0;flex:none;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:calc(54px + env(safe-area-inset-top)) 48px;padding-top:env(safe-area-inset-top);box-shadow:0 5px 18px #12253612}
+  .brand-lockup{height:54px;min-width:0;justify-content:flex-start;padding:0 14px;border:0}
+  .brand-lockup>div{display:flex!important}
+  .brand-version{display:none}
+  .workspace-switcher{position:relative;grid-column:2;grid-row:1;padding:0 12px 0 0}
+  .workspace-switch{min-height:40px;margin:0;padding:5px 8px;gap:7px}
+  .workspace-name{display:flex!important;max-width:138px}
+  .workspace-name strong{font-size:10px}
+  .workspace-name span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:9px}
+  .workspace-switch>svg{display:block!important}
+  .workspace-avatar{width:27px;height:27px}
+  .workspace-menu{z-index:30;right:8px;left:auto;width:min(270px,calc(100vw - 24px))}
+  .sidebar-scroll{grid-column:1/-1;grid-row:2;display:flex;align-items:center;gap:5px;width:100%;height:48px;min-height:48px;padding:0 10px 5px;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scrollbar-width:none}
+  .sidebar-scroll::-webkit-scrollbar{display:none}
+  .nav-section-label,.category-heading,.category-group-label,.sidebar-note{display:none!important}
+  .nav-item{display:flex;flex:0 0 auto;width:auto;height:34px;min-height:34px;margin:0;padding:0 10px;gap:7px;border-radius:8px}
+  .nav-item>span{display:inline!important}
+  .nav-item .nav-count{display:none!important}
+  .scope-picker{display:flex;flex:0 0 auto;width:auto;height:32px;margin:0;padding:2px;border:1px solid #ffffff20;border-radius:8px;background:#ffffff0b}
+  .scope-picker button{height:26px;padding:0 9px;font-size:10px}
+  .category-group{display:contents}
+  .category-row{display:flex;flex:0 0 auto;width:auto;height:34px;margin:0;padding:0;border:0;border-radius:8px;background:transparent}
+  .category-select{display:flex;width:auto;height:34px;min-height:34px;padding:0 10px;gap:7px;border-radius:8px;color:#d6e2e6}
+  .category-select .category-color{width:8px;height:8px}
+  .category-name{display:inline!important;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px}
+  .category-count,.category-more{display:none!important}
+  .category-row.selected{background:#ffffff15}
+  .category-row.selected .category-select{color:#fff}
+  .sidebar-bottom{display:none}
+  .main-panel{width:100%;min-width:0;min-height:calc(100dvh - 102px);flex:1}
+  .topbar{position:relative;height:52px;padding:0 14px}
+  .breadcrumb{min-width:0;overflow:hidden;white-space:nowrap}
+  .breadcrumb strong{overflow:hidden;text-overflow:ellipsis}
+  .top-actions{gap:7px}
+  .topbar-divider,.online-state,.hotkey-pill{display:none!important}
+  .top-settings-button{width:38px;height:38px;flex:0 0 auto}
+  .content-area{min-height:calc(100dvh - 154px);padding:0 14px calc(20px + env(safe-area-inset-bottom))}
+  .page-intro{height:132px;padding:16px 17px}
+  .page-intro h1{font-size:24px}
+  .page-intro p{max-width:230px;font-size:10px;line-height:1.6}
+  .intro-mark{right:-22px;opacity:.5;transform:scale(.72);transform-origin:right center}
+  .cloud-sync-strip{align-items:flex-start;gap:10px;padding:12px}
+  .cloud-sync-strip-copy{align-items:flex-start}
+  .cloud-sync-strip-copy small{line-height:1.5}
+  .cloud-sync-strip-actions{flex-wrap:wrap;justify-content:flex-end}
+  .action-bar{align-items:stretch;flex-direction:column;gap:10px}
+  .search-box{max-width:none;height:42px}
+  .action-buttons{justify-content:flex-end;flex-wrap:wrap;gap:6px}
+  .action-buttons>.button-quiet,.action-buttons>.button-primary{min-height:38px}
+  .results-toolbar{align-items:flex-start;height:auto;min-height:44px;padding:8px 0;gap:8px}
+  .results-tools{max-width:75%;justify-content:flex-end;flex-wrap:wrap;gap:4px}
+  .phrase-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .phrase-card{min-width:0}
+  .content-footer{gap:6px;flex-wrap:wrap;padding-bottom:env(safe-area-inset-bottom)}
+  .settings-modal,.cloud-sync-modal{width:min(100%,520px);max-height:calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom));overflow-y:auto;overscroll-behavior:contain}
+  .modal-backdrop{align-items:flex-end;padding:12px 10px calc(12px + env(safe-area-inset-bottom))}
+}
+
+@media(max-width:560px){
+  .sidebar{grid-template-rows:calc(52px + env(safe-area-inset-top)) 46px}
+  .brand-lockup{height:52px;padding:0 11px;gap:8px}
+  .brand-lockup .brand-mark{width:30px;height:30px}
+  .brand-lockup strong{font-size:15px}
+  .brand-lockup small{font-size:8px}
+  .workspace-switcher{padding-right:8px}
+  .workspace-switch{gap:5px;padding:4px 6px}
+  .workspace-name{max-width:112px}
+  .workspace-name strong{font-size:9px}
+  .workspace-name span{max-width:105px;font-size:8px}
+  .sidebar-scroll{height:46px;min-height:46px;padding-right:8px;padding-left:8px}
+  .nav-item{height:32px;min-height:32px;padding:0 8px;gap:5px;font-size:10px}
+  .nav-item svg{width:14px;height:14px}
+  .scope-picker button{padding:0 7px;font-size:9px}
+  .category-select{height:32px;min-height:32px;padding:0 8px}
+  .category-name{max-width:92px;font-size:9px}
+  .main-panel{min-height:calc(100dvh - 98px)}
+  .content-area{min-height:calc(100dvh - 150px);padding:0 11px calc(16px + env(safe-area-inset-bottom))}
+  .page-intro{height:122px;margin-top:10px;padding:14px}
+  .page-intro h1{font-size:22px}
+  .page-intro p{max-width:205px;font-size:9px}
+  .intro-mark{right:-42px;transform:scale(.62);transform-origin:right center}
+  .action-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .action-buttons>*{justify-content:center;min-width:0}
+  .phrase-grid{grid-template-columns:1fr}
+  .phrase-card{min-height:0}
+  .results-tools{max-width:78%}
+  .cloud-sync-strip{display:flex;flex-direction:column}
+  .cloud-sync-strip-actions{width:100%;justify-content:stretch}
+  .cloud-sync-strip-actions button{flex:1;min-height:38px}
+  .settings-modal,.cloud-sync-modal{padding:19px 16px 14px;border-radius:16px}
+  .modal-footer{align-items:flex-start;gap:10px}
+  .modal-footer>span{max-width:44%;line-height:1.5}
+}

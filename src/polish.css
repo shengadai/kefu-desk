@@ -1,0 +1,79 @@
+.card-category{font-size:10px}
+.card-content h3{font-size:14px}
+.card-content p{font-size:12px;line-height:1.7}
+.card-tags span{font-size:9px}
+.shortcut-label,.copy-button{font-size:10px}
+.compact-card .card-content h3{font-size:12px}
+.compact-card .card-content p{font-size:11px}
+.theme-dark .card-content h3{color:#e3ebed}
+.workspace-switcher{position:relative;margin:20px 13px 22px;z-index:5}
+.workspace-switcher .workspace-switch{width:100%;margin:0;cursor:pointer;text-align:left;font:inherit}
+.workspace-switcher .workspace-switch:hover{background:rgba(255,255,255,.075);border-color:rgba(255,255,255,.15)}
+.workspace-avatar.cloud-avatar{background:#d7e8fb;color:#3977b8}
+.workspace-menu{position:absolute;top:calc(100% + 7px);left:0;right:0;padding:5px;border:1px solid #39515d;border-radius:9px;background:#203744;box-shadow:0 12px 28px #07192370;animation:modal-in .14s ease-out}
+.workspace-option{width:100%;display:flex;align-items:center;gap:10px;padding:9px 8px;border:0;border-radius:6px;background:transparent;color:#9fb3bd;text-align:left;cursor:pointer}
+.workspace-option:hover,.workspace-option.selected{background:#294653;color:#eaf5f3}
+.workspace-option>span{display:flex;flex:1;flex-direction:column;gap:4px}
+.workspace-option strong{font-size:11px;font-weight:600}
+.workspace-option small{color:#8da4ae;font-size:9px}
+.workspace-option>svg:last-child{color:#62cfaf}
+.workspace-connect-link{display:grid;place-items:center;width:25px;height:25px;border:0;border-radius:5px;background:transparent;color:#76cbb2;cursor:pointer}
+.workspace-connect-link:hover{background:#ffffff12;color:#b8f0df}
+.workspace-connect-banner{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:0 0 14px;padding:13px 15px;border:1px solid #dce8f1;border-radius:8px;background:#f3f8fc}
+.workspace-connect-banner>div{display:flex;align-items:center;gap:10px;color:#5086b8}
+.workspace-connect-banner>div>span{display:flex;flex-direction:column;gap:4px}
+.workspace-connect-banner strong{color:#3a617f;font-size:11px}
+.workspace-connect-banner small{color:#8396a4;font-size:10px}
+.workspace-connect-banner .button-primary{height:32px;flex:0 0 auto;font-size:10px}
+.theme-dark .workspace-connect-banner{border-color:#344f60;background:#203846}
+.theme-dark .workspace-connect-banner strong{color:#c2dced}
+.theme-dark .workspace-connect-banner small{color:#9cb0bb}
+@media(max-width:800px){.workspace-switcher{margin:15px 8px}.workspace-menu{left:65px;right:auto;top:0;width:210px}}
+@media(max-width:560px){.workspace-connect-banner{align-items:flex-start;flex-direction:column}.workspace-connect-banner .button-primary{align-self:flex-end}}
+.export-menu.open .export-options{display:block;top:100%}
+.overlay-sort-bar{min-height:27px;display:flex;align-items:center;gap:5px;margin:0 0 7px;color:#84939a;font-size:9px}
+.overlay-sort-bar>span{margin-right:2px}
+.overlay-sort-bar button{height:23px;display:flex;align-items:center;gap:3px;padding:0 7px;border:1px solid #e2e9eb;border-radius:5px;background:#fff;color:#71828a;font-size:9px}
+.overlay-sort-bar button.active{border-color:#bde5d8;background:#e9f7f2;color:#218d75}
+.overlay-sort-bar small{margin-left:auto;color:#8b9aa0;font-size:8px}
+.overlay-list .phrase-card{min-height:206px}
+.category-row.is-draggable .category-select{cursor:grab;user-select:none}
+.category-row.is-draggable:active .category-select{cursor:grabbing}
+.category-drag-handle{display:grid;place-items:center;flex:0 0 auto;color:#8ca0a9;opacity:.55}
+.category-row.is-draggable:hover .category-drag-handle{opacity:1}
+.category-row.is-dragging{opacity:.45}
+.category-row.is-drop-target{background:#e3f4ee;box-shadow:inset 0 0 0 1px #80cbb5}
+.theme-dark .category-drag-handle{color:#a1b4bb}
+.theme-dark .category-row.is-drop-target{background:#29473f;box-shadow:inset 0 0 0 1px #4d8d7a}
+.overlay-list .phrase-card.is-draggable{cursor:grab}
+.overlay-list .phrase-card.is-draggable:active{cursor:grabbing}
+.overlay-list .phrase-card.is-dragging{opacity:.48}
+.overlay-list .phrase-card.is-drop-target{border-color:#37b99b;box-shadow:0 0 0 2px #37b99b25}
+.theme-dark .overlay-sort-bar{color:#93a6ad}
+.theme-dark .overlay-sort-bar button{border-color:#3b5059;background:#263943;color:#aab9be}
+.theme-dark .overlay-sort-bar button.active{border-color:#416b5d;background:#29473f;color:#9edac8}
+.overlay-category-scroll-area{min-width:0;flex:0 0 auto}
+.overlay-categories{width:100%;overscroll-behavior-x:contain}
+.overlay-category-scrollbar{height:4px;position:relative;margin:-5px 0 6px;border-radius:999px;background:#e5ebed;touch-action:none;cursor:pointer;outline:none}
+.overlay-category-scrollbar.is-hidden{visibility:hidden;pointer-events:none}
+.overlay-category-scrollbar:focus-visible{box-shadow:0 0 0 2px #38b99a30}
+.overlay-category-scroll-thumb{position:absolute;top:0;left:0;height:100%;border-radius:999px;background:#58c4a6;cursor:grab;touch-action:none;transition:background .15s}
+.overlay-category-scroll-thumb:hover{background:#32aa8d}
+.overlay-category-scroll-thumb:active{background:#24977d;cursor:grabbing}
+.theme-dark .overlay-category-scrollbar{background:#354b54}
+.theme-dark .overlay-category-scroll-thumb{background:#52b99e}
+.theme-dark .overlay-category-scroll-thumb:hover{background:#67cfb1}
+.phrase-card.is-draggable{cursor:grab}
+.phrase-card.is-draggable:active{cursor:grabbing}
+.phrase-card.is-dragging{opacity:.48}
+.phrase-card.is-drop-target{border-color:#37b99b;box-shadow:0 0 0 2px #37b99b25}
+.bulk-delete{height:28px;display:flex;align-items:center;gap:6px;padding:0 8px;border:1px solid #f0d6d6;border-radius:5px;background:#fff7f7;color:#bd6868;font-size:10px}
+.bulk-delete:hover:not(:disabled){border-color:#e9bcbc;background:#fff0f0;color:#ad5050}
+.bulk-delete:disabled{cursor:not-allowed;opacity:.55}
+.clear-selection{height:28px;padding:0 4px;border:0;background:transparent;color:#8a99a1;font-size:9px}
+.clear-selection:hover{color:#526570}
+.sort-button.manual-sort-active{border-color:#cce9e0;background:#f0faf7;color:#288d76}
+.field-label .shortcut-input select{flex:0 0 56px;width:56px;min-width:0;padding:4px 3px;border:1px solid #e2e8ea;border-radius:4px;background:#fff;color:#72838b;font-size:9px;font-weight:450;outline:none}
+.field-label .shortcut-input select:focus{border-color:#74c5ae;background:#fff}
+.field-label .shortcut-input input{flex:0 0 25px;width:25px;min-width:0;padding:4px 2px;border:0;background:transparent;text-align:center}
+.theme-dark .field-label .shortcut-input select{border-color:#3a4d55;background:#20333d;color:#dce6e8}

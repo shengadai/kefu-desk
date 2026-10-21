@@ -1,0 +1,6 @@
+.overlay-header{-webkit-app-region:drag}
+.overlay-header button{-webkit-app-region:no-drag}
+.overlay-window-actions .overlay-size-button{border:1px solid #e0e8e9;background:#f8fbfb;color:#73858d}
+.overlay-window-actions .overlay-size-button:hover{border-color:#bdd8d0;background:#edf7f3;color:#318b74}
+.theme-dark .overlay-window-actions .overlay-size-button{border-color:#3b5059;background:#263943;color:#aab9be}
+.theme-dark .overlay-window-actions .overlay-size-button:hover{border-color:#416b5d;background:#29473f;color:#9edac8}
