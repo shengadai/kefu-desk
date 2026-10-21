@@ -17,6 +17,9 @@
 - 支持坚果云 WebDAV 同步话术、分类、图片和视频；视频文件与话术 JSON 分开保存，云端视频存放在 `客服宝/videos/`。
 - 云端工作区以坚果云为主库，软件单独改动自动上传，云端改动自动拉取，其他设备可设为只读。
 - 坚果云第三方应用密码使用 Windows 系统安全存储加密；并发编辑时以坚果云版本为准，并在覆盖本机云端缓存前保留备份。
+- <img width="1783" height="1021" alt="image" src="https://github.com/user-attachments/assets/3921736f-b3a0-4580-9d8e-3d625718a1c2" />
+<img width="1783" height="1021" alt="image" src="https://github.com/user-attachments/assets/886d08a2-ea84-44df-b724-2e003f6ee302" />
+<img width="1745" height="1016" alt="image" src="https://github.com/user-attachments/assets/592b6d14-d082-4eb9-8a32-4766695d5dcd" />
 
 ## 坚果云同步
 
@@ -30,9 +33,6 @@
 导出的 `.json` 不包含视频数据；需要连视频一起迁移或恢复时，请使用“ZIP 完整备份”。导入普通 JSON 会先展示待新增内容和重复数量，确认勾选后只合并新增文字和图片，并忽略其中可能存在的视频引用。仅有视频引用、没有文字和图片的记录不会作为空话术导入；已有视频话术保持原样。取消导入或全部重复时不改变话术库。ZIP 仍用于完整恢复，不受 JSON 合并导入规则影响。
 
 设备权限由客服宝客户端按云端主设备标记执行，不等于坚果云服务端的团队 ACL。使用同一坚果云凭据的人仍可绕过客服宝，直接修改坚果云中的同步文件；不要把应用只读模式当作抵御云盘账号持有者的安全隔离。
-<img width="1783" height="1021" alt="image" src="https://github.com/user-attachments/assets/3921736f-b3a0-4580-9d8e-3d625718a1c2" />
-<img width="1783" height="1021" alt="image" src="https://github.com/user-attachments/assets/886d08a2-ea84-44df-b724-2e003f6ee302" />
-<img width="1745" height="1016" alt="image" src="https://github.com/user-attachments/assets/592b6d14-d082-4eb9-8a32-4766695d5dcd" />
 
 ## Android 版
 
